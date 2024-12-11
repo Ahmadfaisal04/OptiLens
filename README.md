@@ -63,7 +63,7 @@ OptiLens is a revolutionary mobile application designed to improve eye health ma
 ### Machine Learning
 1. Clone the repository: `git clone https://github.com/mamanwhide/OptiLens.git`
 2. Install dependencies: `pip install -r Machine_Learning/requirements.txt`
-3. Train the model: `python Machine_Learning/Notebook/OptiLens.ipynb`
+3. Jupiter Notebook    : `Machine_Learning/Notebook/OptiLens.ipynb`
 
 ### Cloud Backend
 1. Navigate to `Cloud_Computing/`.
