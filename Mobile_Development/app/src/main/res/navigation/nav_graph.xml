@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.optilens.ui.fragment.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <!-- Navigate to Cataract Test -->
+        <action
+            android:id="@+id/action_homeFragment_to_cataractFragment"
+            app:destination="@id/cataractFragment" />
+    </fragment>
+
+    <!-- CataractFragment -->
+    <fragment
+        android:id="@+id/cataractFragment"
+        android:name="com.example.optilens.ui.fragment.test.cataract.CataractDialogFragment"
+        android:label="Cataract Test"
+        tools:layout="@layout/fragment_cataract">
+        <!-- Navigate to ResultFragment -->
+        <action
+            android:id="@+id/action_cataractFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+
+    <!-- ResultFragment -->
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.optilens.ui.fragment.test.cataract.CataractResultFragment"
+        android:label="Result"
+        tools:layout="@layout/fragment_cataract_result">
+        <argument
+            android:name="result"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/optieduFragment"
+        android:name="com.example.optilens.ui.fragment.optiedu.OptieduFragment"
+        android:label="OptiEdu"
+        tools:layout="@layout/fragment_optiedu" />
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.optilens.ui.fragment.history.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.optilens.ui.fragment.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

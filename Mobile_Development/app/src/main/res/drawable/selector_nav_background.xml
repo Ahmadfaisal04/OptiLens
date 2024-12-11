@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- When selected, show a white circle background -->
+    <item android:drawable="@drawable/selected_item_background" android:state_checked="true"/>
+    <!-- Default background is transparent -->
+    <item android:drawable="@android:color/transparent"/>
+</selector>

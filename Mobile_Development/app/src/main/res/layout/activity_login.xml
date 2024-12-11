@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <!-- Logo Section -->
+    <RelativeLayout
+        android:id="@+id/logoSection"
+        android:layout_width="107dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="91dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/optilensLogo"
+            android:layout_width="78dp"
+            android:layout_height="98dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/optilens_logo1_2" />
+        <ImageView
+            android:id="@+id/optilensText"
+            android:layout_width="107dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/optilensLogo"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/optilens_logo1_4" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoSection"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/login"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Input Fields -->
+    <LinearLayout
+        android:id="@+id/inputFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginTitle"
+        android:layout_marginTop="2dp"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <!-- Username -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextFieldStyle"
+                android:hint="Username"
+                android:drawableStart="@drawable/ic_account_circle"
+                android:drawablePadding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextFieldStyle"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ic_key"
+                android:drawableEnd="@drawable/ic_visibility"
+                android:drawablePadding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Forget Password -->
+
+    <!-- Footer Section -->
+    <TextView
+        android:id="@+id/forgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputFields"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/forget_password"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="268dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/group_4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_optilens"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp"
+            android:layout_marginBottom="400dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <!-- Login Button -->
+
+    <!-- Signup Link -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/forgetPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        style="@style/ButtonStyle"/>
+
+    <LinearLayout
+        android:id="@+id/signupSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/don_t_have_an_account"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/signUpLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <!-- Continue with Google -->
+    <LinearLayout
+        android:id="@+id/googleLoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/oroption"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/rounded_border"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <!-- Ikon Google -->
+        <ImageView
+            android:id="@+id/googleIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_google"
+            android:layout_marginEnd="12dp" />
+
+        <!-- Teks Tombol -->
+        <TextView
+            android:id="@+id/googleButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_with_google"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/oroption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="----------Or----------"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_below="@id/signupSection"
+        android:layout_marginTop="30dp"/>
+
+
+
+</RelativeLayout>

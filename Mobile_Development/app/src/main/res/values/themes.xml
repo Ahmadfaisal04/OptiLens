@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Light Theme -->
+    <style name="Theme.OptiLens" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Warna Utama -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorSecondary">@color/primary_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Warna Latar -->
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:colorBackground">@color/background</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:navigationBarColor">@color/footer_background</item>
+
+        <!-- Default Text Colors -->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/semi_transparent_gray</item>
+        <item name="android:textColorLink">@color/link_color</item>
+
+        <!-- Control Colors -->
+        <item name="colorControlHighlight">@color/primary_light</item>
+        <item name="colorControlNormal">@color/gray</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="ButtonBorderStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:background">@drawable/rounded_border</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="TextFieldStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <!-- Background -->
+        <item name="android:background">@drawable/textfield_background</item>
+
+        <!-- Text Colors -->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/semi_transparent_gray</item>
+        <item name="android:textSize">20sp</item>
+        <!-- Padding -->
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="TransparentDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Dark Theme -->
+    <style name="Theme.OptiLens.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_dark</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorSecondary">@color/primary_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Warna Latar -->
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:colorBackground">@color/black</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/footer_background</item>
+
+        <!-- Default Text Colors -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textColorLink">@color/link_color</item>
+
+        <!-- Control Colors -->
+        <item name="colorControlHighlight">@color/primary_light</item>
+        <item name="colorControlNormal">@color/semi_transparent_gray</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.OptiLens" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+</resources>

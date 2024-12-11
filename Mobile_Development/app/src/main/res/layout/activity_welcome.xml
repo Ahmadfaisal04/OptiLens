@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbfbf7">
+
+    <!-- Main container -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#fbfbf7">
+
+        <!-- Logo Image 1 -->
+        <ImageView
+            android:id="@+id/optilensLogo11"
+            android:layout_width="268dp"
+            android:layout_height="800dp"
+            android:layout_marginTop="155dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/optilens_logo1_1"
+            android:contentDescription="Optilens Logo 1" />
+
+        <!-- Logo Image 2 -->
+
+        <!-- Circular Button -->
+
+        <ImageView
+            android:id="@+id/optilensLogo16"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="103dp"
+            android:contentDescription="Optilens Logo 2"
+            android:src="@drawable/optilens_logo1_6" />
+
+        <ImageView
+            android:id="@+id/circularButton"
+            android:layout_width="157dp"
+            android:layout_height="157dp"
+            android:layout_marginTop="349dp"
+            android:layout_marginStart="119dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/circular"
+            android:contentDescription="Circular Button"
+            android:layout_gravity="center" />
+
+        <!-- Logo Image 3 -->
+        <ImageView
+            android:id="@+id/optilensLogo14"
+            android:layout_width="156dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="398dp"
+            android:layout_marginStart="114dp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/optilens_logo1_4"
+            android:contentDescription="Optilens Logo 3" />
+
+        <!-- started Button -->
+        <Button
+            android:id="@+id/btnGetStarted"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginEnd="30dp"
+            android:layout_below="@id/optilensLogo14"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:background="@drawable/rounded_border"
+            android:paddingStart="16dp"
+            android:text="@string/get_started"
+            android:textColor="@color/primary"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:focusable="true"
+            tools:ignore="RtlCompat" />
+
+    </RelativeLayout>
+</RelativeLayout>

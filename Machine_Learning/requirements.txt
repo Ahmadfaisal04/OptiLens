@@ -1,0 +1,12 @@
+IPython
+base64
+cv2
+flask
+google
+keras
+matplotlib
+numpy
+opencv-python
+os
+pillow
+tensorflow

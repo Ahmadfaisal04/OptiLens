@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#1b5839</color>
+    <color name="primary_dark">#14472e</color>
+    <color name="primary_light">#19B365</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Accent Colors -->
+    <color name="link_color">#007aff</color>
+    <color name="gray">#808080</color>
+    <color name="semi_transparent_gray">#1DB0B0B0</color>
+
+
+    <!-- Background Colors -->
+    <color name="background">#F5F5F5</color>
+    <color name="footer_background">#000000</color>
+    <color name="default_button">#E0E0E0</color>
+    <color name="selected_button">#8019B365</color>
+</resources>
